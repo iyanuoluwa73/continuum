@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Continuum HealthCare Services</title>
+    <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body class="font-sans h-screen">
+
+    <header class="font-bold text-center" id="home">
+        <nav id="navbar" class="pt-14 px-7 relative flex flex-row justify-between">
+            <div class="logo ">
+                <img src="/assets/images/continuum-removebg-preview 2.png" alt="">
+            </div>
+    
+            <div class="hover:cursor-pointer hover:scale-75  md:hidden" id="menu_btn">
+                <img src="/assets/icons/menu.svg" alt="">
+            </div>
+    
+            <div class="hidden absolute top-0 right-0 bg-black w-2/4 h-screen pt-12 pb-20 pr-6 z-10 md:h-0 md:flex md:bg-white md:w-auto md:pt-6 md:pr-0" id="menu_list">
+                <div class="close_icon float-right hover:cursor-pointer hover:scale-75 md:hidden">
+                    <img src="/assets/icons/close.svg" id="close_btn" alt="">
+                </div>
+                <div class=" text-white md:text-blue md:text-xl md:font-medium">
+                    <ul class=" text-right clear-right md:flex md:items-center md:justify-center">
+                        <li class="pt-10  md:pr-5 lg:pr-10">
+                            <a href="/index.html" class="hover:border-b-blue hover:border-b-2 md:hover:text-black">Home</a>
+                        </li>
+                        <li class="pt-10 md:pr-5 lg:pr-10">
+                            <a href="/src/service.html" class="md:border-b-blue md:border-b-2 md:text-black">Our Services</a>
+                        </li>
+                        <li class="pt-10 md:pr-5 lg:pr-10">
+                            <a href="/src/about.html" class="hover:border-b-blue hover:border-b-2 md:hover:text-black">About Us</a>
+                        </li>
+                        <li class="pt-10 md:pr-5 lg:pr-10">
+                            <a href="/src/contact.html" class="hover:border-b-blue hover:border-b-2 md:hover:text-black">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="services" class="w-full pb-3 pt-12">
+        <h1 class="text-xl font-medium pb-10 pl-7">OUR SERVICES</h1>
+
+        <div class="flex flex-col items-center justify-center md:grid md:grid-cols-2 md:gap-12 md:place-items-center lg:gap-16">
+            <div class="bg-blue text-center w-2/4 h-44 rounded-lg mb-7 px-4 pt-7 md:w-3/5 md:place-self-end md:mb-0">
+                <img src="/assets/images/icons8-online-class-64.png" class="m-auto w-8"  alt="">
+                <p class="text-base text-white pt-6 lg:w-3/4 lg:m-auto">Online Tutorials and Classes for International Exams</p>
+            </div>
+    
+            <div class="bg-blue text-center w-2/4 h-44 rounded-lg mb-7 px-4 pt-7 md:w-3/5 md:place-self-start md:mb-0">
+                <img src="/assets/images/icons8-hospital-3-50.png" class="m-auto w-8"  alt="">
+                <p class="text-base text-white pt-6 lg:w-3/4 lg:m-auto">Nursing and Nursing Assistant Services</p>
+            </div>
+    
+            <div class="bg-blue text-center w-2/4 h-44 rounded-lg mb-7 px-4 pt-7 md:w-3/5 md:place-self-end">
+                <img src="/assets/images/icons8-medical-50.png" class="m-auto w-8"  alt="">
+                <p class="text-base text-white pt-6 lg:w-3/4 lg:m-auto">Supplies of various medical equipments.</p>
+            </div>
+
+            <div class="bg-blue text-center w-2/4 h-44 rounded-lg mb-7 px-4 pt-7 md:w-3/5 md:place-self-start">
+                <img src="/assets/images/icons8-medical-license-50.png" class="m-auto "  alt="">
+                <p class="text-base text-white pt-4 lg:w-3/4 lg:m-auto">Healthcare Professionals Licensing Facilities</p>
+            </div>
+
+            <div class="bg-blue text-center w-2/4 h-44 rounded-lg mb-7 px-4 pt-7 md:w-3/5 md:place-self-end">
+                <img src="/assets/images/icons8-social-care-32.png" class="m-auto"  alt="">
+                <p class="text-base text-white pt-6 px-4 lg:w-3/4 lg:m-auto">Home, Health and Social Care</p>
+            </div>
+
+            <div class="bg-blue text-center w-2/4 h-44 rounded-lg mb-7 px-4 pt-7 md:w-3/5 md:place-self-start">
+                <img src="/assets/images/icons8-recruiting-48.png" class="m-auto w-8"  alt="">
+                <p class="text-base text-white pt-6 lg:w-3/4 lg:m-auto">TCHS and other HealthCare Recruitment</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
