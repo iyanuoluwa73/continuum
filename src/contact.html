@@ -12,7 +12,7 @@
     <header class="font-bold text-center" id="home">
         <nav id="navbar" class="pt-14 px-7 relative flex flex-row justify-between">
             <div class="logo ">
-                <img src="/assets/images/continuum-removebg-preview 2.png" alt="">
+                <img src="/assets/images/continuum-logo.png" alt="">
             </div>
     
             <div class="hover:cursor-pointer hover:scale-75  md:hidden" id="menu_btn">
@@ -47,38 +47,52 @@
         <section class="w-full md:pt-6 md:flex md:items-start lg:justify-center">
             <section class="pb-7 pt-10 px-7 md:w-full md:pr-0 lg:w-1/2">
                 <div>
-                    <h1 class="text-xl font-medium">Message Us</h1>
-                    <form action="" id="form" class="px-5 pt-5 md:px-0">
+                    <h1 class="text-xl font-medium h1">Message Us</h1>
+                    <form action="https://formsubmit.co/318f590cc436fa8dd8f0332e26ce01c4" method="post" id="form" class="px-5 pt-5 md:px-0">
+
+                        <!-- form submit -->
+                        <input type="hidden" name="_next" value="/src/success.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <div class="hidden text-red-500 text-lg pb-6" id="formError">
+                            <h2 class="">*Message not sent. Please fill the fields.</h2>
+                        </div>
+
                         <div>
-                            <label for="" class="text-black">First Name</label>
+                            <label for="fname" class="text-black">First Name</label>
+                            <p class="text-red-500 error" id="firstNameError">
+                            </p>
                         </div>
                         <div>
-                            <input type="text" name="" id="" class="border-2 w-full mt-2 mb-5 p-3 rounded border-blue md:w-4/5 ">
+                            <input type="text" name="First&nbsp;Name" placeholder="John" id="fname" class="border-2 w-full mt-2 mb-5 p-3 rounded border-blue  focus:outline-none md:w-4/5" required />    
                         </div>
                         
                         <div>
-                            <label for="" class="text-black">Last Name</label>
+                            <label for="lname" class="text-black">Last Name</label>
+                            <p class="text-red-500 error last-name-error"></p>
                         </div>
                         <div>
-                            <input type="text" name="" id="" class="border-2 w-full mt-2 mb-5 p-3 rounded border-blue md:w-4/5">
-                        </div>
-    
-                        <div>
-                            <label for="" class="text-black">Mail</label>
-                        </div>
-                        <div>
-                            <input type="email" name="" id="" class="border-2 w-full mt-2 mb-5 p-3 rounded border-blue md:w-4/5">
+                            <input type="text" name="Last&nbsp;Name" placeholder="Doe" id="lname" class="border-2 w-full mt-2 mb-5 p-3 rounded border-blue  focus:outline-none md:w-4/5" required />
                         </div>
     
                         <div>
-                            <label for="" class="text-black">Write your message</label>
+                            <label for="mail" class="text-black">Mail</label>
+                            <p class="text-red-500 hidden text-xs error" id="mailError">*Invalid Email</p>
                         </div>
                         <div>
-                            <textarea name="" id="" class="border-2 w-full mt-2 mb-5 p-3 rounded border-blue resize-none md:w-4/5 "></textarea>
+                            <input type="email" name="Mail" placeholder="johndoe@gmail.com" id="mail" class="border-2 w-full mt-2 mb-5 p-3 rounded border-blue focus:outline-none md:w-4/5" required>
+                        </div>
+    
+                        <div>
+                            <label for="message" class="text-black">Write your message</label>
+                        </div>
+                        <div>
+                            <textarea name="Message" id="message" placeholder="Send us a message" maxlength="500" class="border-2 w-full mt-2 mb-5 p-3 rounded border-blue focus:outline-none resize-none md:w-4/5 "></textarea>
+                            <p class="text-red-500 error"></p>
                         </div>
                         
-                        <button class=" bg-blue py-3 px-6 text-base text-white rounded-xl w-full cursor-pointer duration-75 hover:bg-black hover:text-white md:text-xl md:w-4/5 md:text-center" id="btn">
-                            <a href="" class="">Send Message</a>
+                        <button onclick="checkInputs()" class=" bg-blue py-3 px-6 text-base text-white rounded-xl w-full cursor-pointer duration-75 hover:bg-black hover:text-white md:text-xl md:w-4/5 md:text-center" id="btn">
+                            <a href="#">Send Message</a>
                         </button>
                     </form>
                 </div>
@@ -91,19 +105,30 @@
                         <span>+23491398742431</span>
                     </div>
                     <div class="flex pb-3">
-                        <img src="/assets/icons/geo-alt.svg" alt="" class="pr-3">
+                        <img src="/assets/icons/location.svg" alt="" class="pr-3">
                         <span>Lagos, Nigeria</span>
                     </div>
                     <div class="flex">
-                        <img src="/assets/icons/envelope.svg" alt="" class="pr-3">
+                        <img src="/assets/icons/mail.svg" alt="" class="pr-3">
                         <p class="text-base break-all md:break-normal">thecontinuumhealthcareservices@gmail.com</p>
+                    </div>
+                    <div class="flex items-center justify-around pt-7">
+                        <a href="https://www.facebook.com/TheContinuumHealthcareServices" target="_blank" rel="noopener noreferrer">
+                            <img src="/assets/icons/facebook.svg" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/continuumhealthcareservices" target="_blank" rel="noopener noreferrer">
+                            <img src="/assets/icons/instagram.svg" alt="">
+                        </a>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            <img src="/assets/icons/linkedin.svg" alt="">
+                        </a>
                     </div>
                 </div>
             </section>
         </section>
 
         <section class="w-full bg-blue text-center py-3">
-            <p class="text-white text-xs">&copy; Copyright 2023, The Continuum HealthCare Services</p>
+            <p class="text-white text-xs">&copy;Copyright 2023, The Continuum HealthCare Services</p>
         </section>
     </footer>
     
