@@ -1,1 +1,14 @@
-This website was designed and developed by me and is live at https://iyanuoluwa73.github.io/continuum/
+Links
+  Live Site URL: (https://iyanuoluwa73.github.io/continuum/)
+
+Designed using
+  Figma
+  
+Built with
+  HTML5
+  CSS
+  Javascript
+
+Author
+  Website - Oroleye Iyanuoluwa
+  Twitter - @iyanuoluwa0r
